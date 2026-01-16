@@ -1,0 +1,45 @@
+{
+  "name": "aws-terraform-fastlabs",
+  "version": "1.0.0",
+  "description": "Educational hands-on project to learn Infrastructure as Code (IaC) with Terraform, deploying an AWS Lambda function with structured CloudWatch logging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./build.sh",
+    "format": "terraform fmt -recursive",
+    "validate": "terraform validate",
+    "plan": "terraform plan",
+    "apply": "terraform apply",
+    "destroy": "terraform destroy"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "terraform",
+    "infrastructure-as-code",
+    "iac",
+    "cloudwatch",
+    "serverless",
+    "nodejs",
+    "education",
+    "tutorial",
+    "devops",
+    "cloud",
+    "aws-lambda",
+    "terraform-aws"
+  ],
+  "author": "David Paredes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidparedes/aws-terraform-fastlabs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidparedes/aws-terraform-fastlabs/issues"
+  },
+  "homepage": "https://github.com/davidparedes/aws-terraform-fastlabs#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "private": false
+}

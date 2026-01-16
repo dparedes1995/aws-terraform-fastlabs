@@ -1,0 +1,41 @@
+name: Terraform Validation
+
+on:
+  pull_request:
+    branches: [ main, master ]
+  push:
+    branches: [ main, master ]
+
+jobs:
+  terraform:
+    name: Validate Terraform
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
+      with:
+        terraform_version: 1.6.0
+        
+    - name: Terraform Format Check
+      run: terraform fmt -check -recursive
+      
+    - name: Terraform Init
+      run: terraform init
+      
+    - name: Terraform Validate
+      run: terraform validate
+      
+    - name: Check for sensitive files
+      run: |
+        if [ -f .env ]; then
+          echo "Error: .env file should not be committed"
+          exit 1
+        fi
+        if ls *.tfstate 2>/dev/null; then
+          echo "Error: tfstate files should not be committed"
+          exit 1
+        fi
