@@ -343,7 +343,7 @@ Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](L
 ## 👨‍💻 Autor
 
 **David Paredes**
-- GitHub: [@davidparedes](https://github.com/davidparedes)
+- GitHub: [@dparedes1995](https://github.com/dparedes1995)
 
 ## 🙏 Agradecimientos
 

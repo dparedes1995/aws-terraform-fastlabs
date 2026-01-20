@@ -32,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidparedes/aws-terraform-fastlabs.git"
+    "url": "https://github.com/dparedes1995/aws-terraform-fastlabs.git"
   },
   "bugs": {
-    "url": "https://github.com/davidparedes/aws-terraform-fastlabs/issues"
+    "url": "https://github.com/dparedes1995/aws-terraform-fastlabs/issues"
   },
-  "homepage": "https://github.com/davidparedes/aws-terraform-fastlabs#readme",
+  "homepage": "https://github.com/dparedes1995/aws-terraform-fastlabs#readme",
   "engines": {
     "node": ">=18.0.0"
   },
