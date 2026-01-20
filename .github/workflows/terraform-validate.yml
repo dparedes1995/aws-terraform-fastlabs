@@ -22,7 +22,13 @@ jobs:
 
     - name: Terraform Format Check
       run: terraform fmt -check -recursive
-      
+
+    - name: Create dummy lambda.zip for validation
+      run: |
+        echo '{"dummy": "file"}' > index.js
+        zip lambda.zip index.js
+        echo "✅ Created dummy lambda.zip for terraform validate"
+
     - name: Terraform Init
       run: terraform init -backend=false
       continue-on-error: false
